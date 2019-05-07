@@ -1,12 +1,10 @@
 import * as React from "react";
-import Calendar from "../components/calender";
+import Calendar from "../components/calendar/calender";
 import { fetchCalendar, ICalendarEvents } from "../reducers/calendarReducer";
 import { connect } from "react-redux";
 import { IStore } from "../reducers";
 
-export interface IReactProps {
-  // calendarEvents: ICalendarEvents[];
-}
+export interface IReactProps {}
 
 export interface IReduxProps {
   fetchCalendar: () => void;

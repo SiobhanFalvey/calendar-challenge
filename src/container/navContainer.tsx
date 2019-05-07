@@ -1,9 +1,8 @@
 import * as React from "react";
-import Nav from "../components/nav";
+import Nav from "../components/nav/nav";
 import { setSearchText } from "../reducers/searchBarReducer";
 import { connect } from "react-redux";
 import { IStore } from "../reducers";
-import { ICalendarEvents } from "../reducers/calendarReducer";
 
 export interface IReactProps {}
 

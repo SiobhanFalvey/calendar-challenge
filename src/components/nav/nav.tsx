@@ -1,6 +1,5 @@
 import * as React from "react";
-import styles from "./nav.module.scss";
-import { ICalendarEvents } from "../reducers/calendarReducer";
+import styles from "../nav/nav.module.scss";
 
 export interface IProps {
   searchText: string;

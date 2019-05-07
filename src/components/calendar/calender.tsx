@@ -1,7 +1,6 @@
 import * as React from "react";
-import { ICalendarEvents } from "../reducers/calendarReducer";
+import { ICalendarEvents } from "../../reducers/calendarReducer";
 import styles from "./calendar.module.scss";
-import { string } from "prop-types";
 
 export interface IProps {
   calendar: ICalendarEvents;
