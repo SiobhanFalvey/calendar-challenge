@@ -1,0 +1,14 @@
+.calendarContainer {
+  border: solid black;
+  border-radius: 20px;
+  padding: 15px;
+  height: 250px;
+  width: 300px;
+  text-align: center;
+}
+
+.eventContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}

@@ -1,14 +1,16 @@
-.App {
-  text-align: center;
+.App-main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: "Barlow", sans-serif;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: red;
   color: white;
+  height: 50px;
+  padding: 5px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  font-family: "Barlow", sans-serif;
 }
