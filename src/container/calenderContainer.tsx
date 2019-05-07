@@ -3,10 +3,9 @@ import Calendar from "../components/calender";
 import { fetchCalendar, ICalendarEvents } from "../reducers/calendarReducer";
 import { connect } from "react-redux";
 import { IStore } from "../reducers";
-import styles from "../components/calendar.module.scss";
 
 export interface IReactProps {
-  // calendarEvents: ICalendarEvents;
+  // calendarEvents: ICalendarEvents[];
 }
 
 export interface IReduxProps {
@@ -52,11 +51,6 @@ class CalenderContainer extends React.Component<
     );
   }
 }
-// private filterCards =( calendarEvents: ICalendarEvents[]) => {
-//   const filterEvents = calendarEvents.filter(calendarEvents)
-//   return filterEvents
-// }
-
 const mapStateToProps = (state: IStore, props: IReactProps) => {
   return {
     calendarEvents: state.calendar.calendarEvents
