@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles from "../nav/nav.module.scss";
+import styles from "../searchBar/searchBar.module.scss";
 
 export interface IProps {
   searchText: string;
@@ -8,11 +8,12 @@ export interface IProps {
 
 export interface IState {}
 
-class Nav extends React.Component<IProps, IState> {
+class SearchBar extends React.Component<IProps, IState> {
   public render() {
     return (
-      <section className={styles.searchBar}>
+      <section className={styles.searchBarPage}>
         <input
+          className={styles.searchBar}
           type="text"
           placeholder="search events"
           value={this.props.searchText}
@@ -23,4 +24,4 @@ class Nav extends React.Component<IProps, IState> {
   }
 }
 
-export default Nav;
+export default SearchBar;

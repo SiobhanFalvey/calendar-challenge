@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Provider } from "react-redux";
 import store from "./store";
 import "./App.css";
-import CalenderContainer from "./container/calenderContainer";
-import NavContainer from "./container/navContainer";
+import CalendarContainer from "./container/calendarContainer";
 
 class App extends Component {
   public render() {
@@ -12,15 +11,12 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <h1>
-              May 2019: This Month at Keen Interpretive Dance Institute
+              May 2019: This Month for the Keen Interpretive Dance Institute
               Enthusiast
             </h1>
           </header>
-          <nav>
-            <NavContainer />
-          </nav>
           <main className="App-main">
-            <CalenderContainer />
+            <CalendarContainer />
           </main>
         </div>
       </Provider>
